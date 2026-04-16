@@ -31,5 +31,9 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 ### Rating Distribution
 <img width="607" height="393" alt="image" src="https://github.com/user-attachments/assets/fe99d882-f95c-43b7-ad3b-2a4fb2963d72" />
 
-
+## Features Used
+- **Content Type:** Movie vs TV show
+- **Data Features:** year/month added to Netflix, release year
+- **Description Length:** Word count of plot summary
+- **Genres:** Top 15 genres one-hot encoded
 
