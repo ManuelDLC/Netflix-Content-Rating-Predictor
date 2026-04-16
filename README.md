@@ -1,5 +1,5 @@
 # Netflix Content Rating Predictor
-A ML pipeliene that predicts Netflix content ratings using data such as cast/crew, genre, and language
+A ML pipeline that predicts Netflix content ratings using data such as cast/crew, genre, and language
 
 ## Results
 
@@ -9,7 +9,7 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 | MAE    | 0.561 |
 | CV R²  | 0.369 ± 0.107 |
 
-**Best XGBoost parameters:** 'max_depth = 7', 'learning_rate = 0.05', 'subsample = 0.9', 'm_estimators = 200'
+**Best XGBoost parameters:** 'max_depth = 7', 'learning_rate = 0.05', 'subsample = 0.9', 'n_estimators = 200'
 
 ## Key Findings
 - **Horror Genre** was the strongest predictor of content rating
@@ -19,7 +19,7 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 
 ## Visualization
 
-### Actual vs Prediction
+### Actual vs Predicted
 <img width="690" height="490" alt="image" src="https://github.com/user-attachments/assets/4389f5fe-84f3-4559-bd2c-3d36a1ad943d" />
 
 ### Top 15 Feature Importances
@@ -33,12 +33,12 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 
 ## Features Used
 - **Content Type:** Movie vs TV show
-- **Data Features:** year/month added to Netflix, release year
+- **Date Features:** year/month added to Netflix, release year
 - **Description Length:** Word count of plot summary
 - **Genres:** Top 15 genres one-hot encoded
 - **Language:** Top 10 languages one-hot encoded
 - **Cast:** Top 20 actors one-hot encoded
-- **Directors:** Top 20 directos one-hot encoded
+- **Directors:** Top 20 directors one-hot encoded
 - **Countries:** Top 15 countries one-hot encoded
 - **Plot Descriptions:** TF-IDF vectorized (300 features, unigrams + bigrams)
 
