@@ -36,4 +36,21 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 - **Data Features:** year/month added to Netflix, release year
 - **Description Length:** Word count of plot summary
 - **Genres:** Top 15 genres one-hot encoded
+- **Language:** Top 10 languages one-hot encoded
+- **Cast:** Top 20 actors one-hot encoded
+- **Directors:** Top 20 directos one-hot encoded
+- **Countries:** Top 15 countries one-hot encoded
+- **Plot Descriptions:** TF-IDF vectorized (300 features, unigrams + bigrams)
 
+## Models Compared
+| Model | MAE | R² |
+|-------|-----|----|
+| Random Forest | 0.561 | 0.372 |
+| XGBoost (tuned) | 0.561 | 0.387 |
+
+## How To Run
+
+## Limitations
+- Ratings reflect opinions, which is noisy. A 0.387 R² is pretty reasonable with this in mind
+- Cast/director features are binary and not a measure of involvement level
+- Model would not generalize well to unreleased content since some features need to wait until post-release such as post release signals
