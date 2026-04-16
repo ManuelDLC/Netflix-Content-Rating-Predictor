@@ -5,6 +5,6 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 
 | Metric | Score |
 |--------|------ |
-| R²     |  | 
-| MAE    | |
-| CV R²  |   
+| R²     | 0.387 | 
+| MAE    | 0.561 |
+| CV R²  |   0.369 ± 0.107 |
