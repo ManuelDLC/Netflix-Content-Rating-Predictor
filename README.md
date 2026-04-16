@@ -49,6 +49,9 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 | XGBoost (tuned) | 0.561 | 0.387 |
 
 ## How To Run
+- Clone the repo
+- Install: pip install xgboost scikit-learn kagglehub pandas matplotlib seaborn scipy
+- Open notebook and run all cells
 
 ## Limitations
 - Ratings reflect opinions, which is noisy. A 0.387 R² is pretty reasonable with this in mind
