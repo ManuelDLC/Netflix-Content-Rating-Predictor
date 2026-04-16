@@ -54,3 +54,7 @@ A ML pipeliene that predicts Netflix content ratings using data such as cast/cre
 - Ratings reflect opinions, which is noisy. A 0.387 R² is pretty reasonable with this in mind
 - Cast/director features are binary and not a measure of involvement level
 - Model would not generalize well to unreleased content since some features need to wait until post-release such as post release signals
+
+## Dataset
+[Netflix Movies and TV Shows till 2025](https://www.kaggle.com/datasets/bhargavchirumamilla/netflix-movies-and-tv-shows-till-2025) via Kaggle
+
